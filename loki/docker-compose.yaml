@@ -188,7 +188,8 @@ services:
       - loki
 
   arival-nodejs:
-    image: arival-nodejs
+    build:
+      dockerfile: ./Dockerfile
     ports:
       - 5001:5001
     networks:
